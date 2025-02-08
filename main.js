@@ -61,17 +61,17 @@ ScrollReveal().reveal('.home-contact p, .about-content',{origin:'right'});
     backDelay:1000,
     loop:true,
   });
-  document.getElementById('downloadBtn').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor behavior
-    console.log("it is in this button");
-    const resumeUrl = 'C:\Users\ 91785\Desktop\Resume.docx'; // Update this URL to the path of your resume
-    const link = document.createElement('a');
-    link.href = resumeUrl;
-    link.download = 'My_Resume.pdf'; // This will be the default name of the downloaded file
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
+//   document.getElementById('downloadBtn').addEventListener('click', function(event) {
+//     event.preventDefault(); // Prevent the default anchor behavior
+//     console.log("it is in this button");
+//     const resumeUrl = 'https://github.com/amultiwary/My-Portfolio/blob/main/My%20resume.pdf'; // Update this URL to the path of your resume
+//     const link = document.createElement('a');
+//     link.href = resumeUrl;
+//     link.download = 'My_Resume.pdf'; // This will be the default name of the downloaded file
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+// });
 
 
 function showmore(){

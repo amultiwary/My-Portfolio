@@ -25,7 +25,7 @@ body{
 }
 section{
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 8rem 9% 2rem;
    
     
 }
@@ -213,21 +213,41 @@ margin-bottom: 5rem;
 
 
 
+/* #skills{
+    text-align: center;
+} */
 
 
-
-.section1{
+/* .section1{
     display: flex;
     flex-wrap: wrap;
    
+} */
+
+.bothcontainers{
+    display: flex;  
 }
 .container1{
+    
     width: 500px;
     height: 500px;
-    padding: 75px 90px;
-    margin-left: 120px;
+    padding: 47px 11px;
+    margin-left: 40px;
+}
+.container2{
+    
+    width: 500px;
+    height: 500px;
+    padding: 41px 81px;
+    margin-left: 184px;
+}
+.Technical-bars{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 .heading1{
+    
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -235,11 +255,13 @@ margin-bottom: 5rem;
     margin-bottom: 50px;
    
 }
- .bar{
-    font-size: 23px;
-} 
+ 
+
 .Technical-bars .bar{
     margin-top: 40px 0;
+    font-size: 23px;
+   width: 200px;
+   margin-left: 10px;
 }
 .Technical-bars .bar:first-child{
     margin-top: 0px;
@@ -287,13 +309,13 @@ margin-bottom: 5rem;
     width: 90%;
 }
 .progress-line.css span{
-    width: 60%;
+    width: 70%;
 }
 .progress-line.Javascript span{
     width: 85%;
 }
 .progress-line.React span{
-    width: 50%;
+    width: 90%;
 }
 .progress-line.MySql span{
     width: 90%;
@@ -443,7 +465,6 @@ margin-bottom: 5rem;
 .radial-bar .text{
     width: 100%;
     position: absolute;
-    text-align: center;
     left: 50%;
     bottom: -5px;
     transform: translateX(-50px);
@@ -451,14 +472,17 @@ margin-bottom: 5rem;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
-} */
+} 
 
 
 
 
-.portfolio{
-    background:var(--snd-bg-color)
-}
+
+
+
+
+
+
 .portfolio h2{
     margin-bottom: 4rem;
 }
@@ -467,6 +491,7 @@ display: grid;
 grid-template-columns: repeat(3,1fr);
 align-items: center;
 gap: 2.5rem;
+margin-top: 50px;
 }
 .portfolio-container .portfolio-box{
     position: relative;
@@ -528,6 +553,12 @@ gap: 2.5rem;
     color: #000;
     background:var(--text-color)
 }
+
+
+
+
+
+
 .contact h2{
     margin-bottom: 3rem;
 }
