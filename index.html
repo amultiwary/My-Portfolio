@@ -24,7 +24,7 @@
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#skills">My skills</a>
-        <a href="#portfolio">Projects</a>
+        <a href="#project">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -97,32 +97,6 @@
         <a id="read-more-btn" class="btn" onclick="showmore()">Read more</a>
       </div>
     </section>
-
-    <!-- My Skills SECTION DESIGN   -->
-    <!-- <section class="services" id="services">
-      <h2 class=" heading">My <span>Skills</span></h2>
-
-      <div class="services-container">
-        <div class="services-box">
-          <i class="fa-solid fa-code"></i>
-          <h3>Web Development</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque vitae et, sed sint quos ipsum eum ipsa officiis alias omnis veritatis nemo. Natus quos doloremque facere earum culpa, id numquam.</p>
-          <a href="#"class="btn">Read More</a>
-        </div>
-        <div class="services-box">
-          <i class="fa-solid fa-palette"></i>
-          <h3>UI/UX Designing</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque vitae et, sed sint quos ipsum eum ipsa officiis alias omnis veritatis nemo. Natus quos doloremque facere earum culpa, id numquam.</p>
-          <a href="#"class="btn">Read More</a>
-        </div>
-        <div class="services-box">
-          <i class="fa-brands fa-android"></i>
-          <h3>App Development</h3> and this is to change
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque vitae et, sed sint quos ipsum eum ipsa officiis alias omnis veritatis nemo. Natus quos doloremque facere earum culpa, id numquam.</p>
-          <a href="#"class="btn">Read More</a>
-        </div>
-      </div> -->
-    <!-- </section> -->
 
     <!-- <section> -->
 
@@ -205,6 +179,24 @@
                   <span></span>
                 </div>
               </div>
+              <div class="bar">
+                <i style="color: #f7df1e" class="fa-brands fa-java"></i>
+                <div class="info">
+                  <span>Java</span>
+                </div>
+                <div class="progress-line Java">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                <i style="color: #4f5b93" class="fa-brands fa-square-github"></i>
+                <div class="info">
+                  <span>Git & Github</span>
+                </div>
+                <div class="progress-line git">
+                  <span></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -217,7 +209,7 @@
                 <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                 <circle class="path path-1" cx="100" cy="100" r="80"></circle>
               </svg>
-              <div class="percentage">90%</div>
+              <div class="percentage">75%</div>
               <div class="text">Creativity</div>
             </div>
             <div class="radial-bar">
@@ -225,7 +217,7 @@
                 <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                 <circle class="path path-1" cx="100" cy="100" r="80"></circle>
               </svg>
-              <div class="percentage">65%</div>
+              <div class="percentage">80%</div>
               <div class="text">Communication</div>
             </div>
             <div class="radial-bar">
@@ -241,7 +233,7 @@
                 <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                 <circle class="path path-1" cx="100" cy="100" r="80"></circle>
               </svg>
-              <div class="percentage">80%</div>
+              <div class="percentage">85%</div>
               <div class="text">Team Work</div>
             </div>
           </div>
@@ -250,67 +242,70 @@
     </section>
     <!-- </section> -->
 
-    <!--  PORTFOLIO SECTION DESIGN   -->
-    <section class="portfolio" id="portfolio" style="background:var(--snd-bg-color);">
+    <!--  project SECTION DESIGN   -->
+    <section
+      class="project"
+      id="project"
+      style="background: var(--snd-bg-color)">
       <h2 class="heading">Latest <span>Projects</span></h2>
 
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="./assets/amazon clone.jpg" alt="" />
-          <div class="portfolio-layer">
+      <div class="project-container">
+        <div class="project-box">
+          <img src="./assets/amazon clone.jpg" alt=""/>
+          <div class="project-layer">
             <h4>Web Design</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <i class="fa-solid fa-up-right-from-square"></i>
+            <i class="fa-solid fa-up-right-from-square" onclick="amazonclone()"></i>
           </div>
         </div>
 
-        <div class="portfolio-box">
-          <img src="./assets/flipkart clone.png" alt="" />
-          <div class="portfolio-layer">
+        <div class="project-box">
+          <img src="./assets/tic_tac_toe.jpg" alt=""/>
+          <div class="project-layer">
             <h4>Web Design</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <i class="fa-solid fa-up-right-from-square"></i>
+            <i class="fa-solid fa-up-right-from-square" onclick="tictactoe()"></i>
           </div>
         </div>
 
-        <div class="portfolio-box">
+        <div class="project-box" id="inventory">
           <img
             src="./assets/Inventory_Management_System_Guide_371bf8be3a.jpg"
             alt=""
           />
-          <div class="portfolio-layer">
+          <div class="project-layer">
             <h4>Web Design</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             <i class="fa-solid fa-up-right-from-square"></i>
           </div>
         </div>
 
-        <div class="portfolio-box">
+        <div class="project-box">
           <img src="./assets/netflix clone.png" alt="" />
-          <div class="portfolio-layer">
+          <div class="project-layer">
             <h4>Web Design</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             <i class="fa-solid fa-up-right-from-square"></i>
           </div>
         </div>
 
-        <div class="portfolio-box">
+        <div class="project-box">
           <img src="./assets/spotify clone.webp" alt="" />
-          <div class="portfolio-layer">
+          <div class="project-layer">
             <h4>Web Design</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             <i class="fa-solid fa-up-right-from-square"></i>
           </div>
         </div>
-
-        <!-- <div class="portfolio-box">
-          <img src="./assets/My image.jpg" alt="">
-          <div class="portfolio-layer">
+        <div class="project-box" id="wellness">
+          <img src="./assets/wellness.jpeg" alt="" />
+          <div class="project-layer">
             <h4>Web Design</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <i class="fa-solid fa-up-right-from-square"></i>
+            <i class="fa-solid fa-up-right-from-square" onclick="bmicalculator()"
+           ></i>
           </div>
-           </div> -->
+        </div>
       </div>
     </section>
 

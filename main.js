@@ -49,7 +49,7 @@ ScrollReveal({
     delay:200,
 });
 ScrollReveal().reveal('.home-content, heading',{origin:'top'});
-ScrollReveal().reveal('.home-img,.services-container,.portfolio-box,.contact form',{origin:'buttom'});
+ScrollReveal().reveal('.home-img,.services-container,.project-box,.contact form',{origin:'buttom'});
 ScrollReveal().reveal('.home-contact h1, .about-img',{origin:'left'});
 ScrollReveal().reveal('.home-contact p, .about-content',{origin:'right'});
 
@@ -61,17 +61,7 @@ ScrollReveal().reveal('.home-contact p, .about-content',{origin:'right'});
     backDelay:1000,
     loop:true,
   });
-//   document.getElementById('downloadBtn').addEventListener('click', function(event) {
-//     event.preventDefault(); // Prevent the default anchor behavior
-//     console.log("it is in this button");
-//     const resumeUrl = 'https://github.com/amultiwary/My-Portfolio/blob/main/My%20resume.pdf'; // Update this URL to the path of your resume
-//     const link = document.createElement('a');
-//     link.href = resumeUrl;
-//     link.download = 'My_Resume.pdf'; // This will be the default name of the downloaded file
-//     document.body.appendChild(link);
-//     link.click();
-//     document.body.removeChild(link);
-// });
+
 
 
 function showmore(){
@@ -83,3 +73,37 @@ function showmore(){
 }
 
 
+/*=========================================== professional skills  =====================================*/
+const radialBars = document.querySelectorAll(".radial-bar");
+
+radialBars.forEach((bar) => {
+  const percentageEl = bar.querySelector(".percentage");
+  const circle = bar.querySelector(".path");
+  const percentText = percentageEl.innerText.trim(); // e.g., "90%"
+  const percent = parseInt(percentText.replace("%", "")); // e.g., 90
+  const radius = 80;
+  const circumference = 2 * Math.PI * radius;
+  const offset = circumference - (percent / 100) * circumference;
+
+  circle.style.strokeDasharray = `${circumference}`;
+  circle.style.strokeDashoffset = `${circumference}`; // initial hidden
+
+  // Animate with timeout for smoother transition
+  setTimeout(() => {
+    circle.style.strokeDashoffset = `${offset}`;
+  }, 300);
+});
+
+/*=========================================== Normal functions  =====================================*/
+
+function bmicalculator() {
+    window.open("https://amultiwary.github.io/BMI-calculator/", "_blank");
+  }
+
+  function tictactoe() {
+    window.open("https://amultiwary.github.io/Tic-Tac-Toe/", "_blank");
+  }
+  
+  function amazonclone() {
+    window.open("https://amultiwary.github.io/Amazon-Clone/", "_blank");
+  }
