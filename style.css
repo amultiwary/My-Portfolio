@@ -694,10 +694,7 @@ span {
   }
 }
 @media (max-width: 450px) {
-  .header {
-    /* padding: 2rem 5%; */
-    padding-right: 8rem;
-  }
+  
   section {
     width: 100%;
     /* padding: 10rem 5%; */
