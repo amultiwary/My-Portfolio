@@ -100,6 +100,10 @@ function bmicalculator() {
     window.open("https://amultiwary.github.io/BMI-calculator/", "_blank");
   }
 
+  function moviehubgpt() {
+    window.open("https://moviehubgpt.firebaseapp.com", "_blank");
+  }
+
   function tictactoe() {
     window.open("https://amultiwary.github.io/Tic-Tac-Toe/", "_blank");
   }
