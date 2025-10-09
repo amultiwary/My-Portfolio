@@ -101,7 +101,7 @@ function bmicalculator() {
   }
 
   function moviehubgpt() {
-    window.open("https://moviehubgpt.firebaseapp.com", "_blank");
+    window.open("https://cine-mind-tau.vercel.app", "_blank");
   }
 
   function tictactoe() {
@@ -111,3 +111,8 @@ function bmicalculator() {
   function amazonclone() {
     window.open("https://amultiwary.github.io/Amazon-Clone/", "_blank");
   }
+
+  
+
+
+
